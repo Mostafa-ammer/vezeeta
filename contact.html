@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="webfont/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/he-fo.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <button class="btn-scroll" id="goup"><i class="fas fa-long-arrow-alt-up"></i></button>
+  <div class="modal fade" id="myModal">
+<div class="modal-dialog ">
+<div class="modal-content">
+
+<!-- Modal Header -->
+<div class="modal-header">
+<h4 class="modal-title">SignUp & Register</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+
+<!-- Modal body -->
+<div class="modal-body">
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="pill" href="#SignUp">SignUP</a>
+
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="pill" href="#Register">Register</a>
+</li>
+
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div class="tab-pane container active " id="SignUp">
+  <div class="register">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" id="name" class="form-control" autocomplete="off">
+                        <i class="far fa-user ico"></i>
+                        <p class="m-0 text-danger d-none name"> Pleas Enter Your Name.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" id="email" class="form-control" autocomplete="off">
+                        <i class="fas fa-at ico"></i>
+                        <p class="m-0 text-danger d-none email"> Pleas Enter Your Email.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" id="pass" class="form-control" required>
+                        <i class="fas fa-unlock ico"></i>
+                        <p class="m-0 text-danger d-none pass"> Pleas Enter Your Password.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Re-Password</label>
+                        <input type="password" id="re-pass" class="form-control">
+                        <i id="ico" class="fas fa-undo ico"></i>
+                        <p class="m-0 text-danger d-none re-pass"> This Not Equal Password.</p>
+                    </div>
+                    <div class="m-or-f">
+                        <div class="custom-control custom-radio custom-control-inline male">
+                            <input type="radio" class="custom-control-input" id="maleRadio" name="radio">
+                            <label class="custom-control-label" for="maleRadio">Male</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline female">
+                            <input type="radio" class="custom-control-input" id="femaleRadio" name="radio" value="Male">
+                            <label class="custom-control-label" for="femaleRadio">Female</label>
+                        </div>
+                        <button type="button"  onclick="lest()" id="signup" class="btn btn-primary mt-4 d-block rounded-0">Sign Up</button>
+
+                    </div>
+                </div>
+</div>
+<div class="tab-pane container fade" id="Register">
+  <div class="login">
+                    <div class="form-group">
+                      <label class="p-0">Email address</label>
+                      <input type="email" class="form-control" id="lo-email" autocomplete="off">
+                      <i class="fas fa-at ico"></i>
+                      <p class="m-0 text-danger d-none lo-email"> Pleas Enter Your Email.</p>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="p-0">Password</label>
+                      <input type="password" class="form-control" id="lo-pass">
+                      <i class="fas fa-unlock-alt ico"></i>
+                      <p class="m-0 text-danger d-none lo-pass"> Pleas Enter Your password.</p>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="remember" style="
+                      padding: 10px 25px">
+                      <label class="custom-control-label" for="remember">Remember Me</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-4 rounded-0">Login</button>
+                    </div>
+</div>
+
+</div>
+</div>
+
+<!-- Modal footer -->
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+
+</div>
+</div>
+</div>
+<section class="header">
+  <div class="container">
+<div class="row">
+  <div class="col-lg-12">
+  <nav class="navbar navbar-expand-lg ">
+
+    <!-- Brand/logo -->
+    <div class="col-3 ">
+    <a class="navbar-brand bg-white" href="#">
+      <img src="./img/logo.png" alt="logo" >
+    </a>
+</div>
+    <!-- Links -->
+
+      <div class="col-6  ">
+    <ul class="navbar-nav  list ">
+      <li class="nav-item">
+        <a class="nav-link" href="./home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./doctors.html">Doctors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./contact.html">contactUs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./shop.html">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./AskUs.html">AskUs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-2 ">
+                   <div class="cart" id="cart">
+                  <a href="./cart.html " > <i class="fas fa-shopping-cart ico" title="add to card"></i></a>
+                       <span class="badge badge-danger">1</span>
+                   </div>
+                  </div>
+
+                  <div class="col-1 ">
+                   <div class="user" id="user">
+                    <a href="" data-toggle="modal" data-target="#myModal">   <i class="far fa-user ico " title="make signUp" ></i></a>
+                   </div>
+                  </div>
+
+
+</nav></div>
+</div>
+</div>
+<section class="full-panner">
+<div class="container-fluid">
+<div class="contact">
+<h2>Providing Total Health Care Solution</h2>
+<p>ContactUs Only</p>
+</div>
+</div>
+</section>
+
+
+<section class="make-appointment">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-6">
+
+  <h3>Make an Appointment</h3>
+
+
+  <form action="/action_page.php">
+    <div class="row">
+    <div class="col-lg-6 ms">
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" class="form-control" placeholder="Enter email" id="email">
+    </div></div>
+    <div class="col-lg-6 ms">
+    <div class="form-group">
+      <label for="pwd">Phone:</label>
+      <input type="text" class="form-control" placeholder="Enter your phone" id="phone">
+    </div></div>
+    <div class="col-lg-6 ms">
+    <div class="form-group">
+      <label for="pwd">Name:</label>
+      <input type="text" class="form-control" placeholder="Enter your name" id="name">
+    </div></div>
+    <div class="col-lg-6 ms">
+    <div class="form-group">
+      <label for="pwd">Date:</label>
+      <input type="date" class="form-control" placeholder="Enter Date" id="date">
+    </div></div>
+    <div class="col-lg-6 ms">
+    <select name="cars" class="custom-select mb-3">
+      <option selected><i class="fas fa-stethoscope"></i>Choose a major</option>
+      <option value="volvo">Leather</option>
+      <option value="fiat">teeth</option>
+      <option value="audi">Myself</option>
+      <option value="audi">Children and newborns</option>
+      <option value="audi">Neurologists</option>
+      <option value="audi">Obstetrics and Gynecology</option>
+      <option value="audi">bones</option>
+      <option value="audi">Heart and blood vessels</option>
+    </select></div>
+<div class="col-lg-6 ms">
+    <select name="cars" class="custom-select mb-3">
+      <option selected>Choose the province</option>
+      <option value="volvo">Cairo</option>
+      <option value="fiat">Giza</option>
+      <option value="audi">Alex</option>
+      <option value="audi">Qualibia</option>
+      <option value="audi">Menofia</option>
+      <option value="audi">Fayom</option>
+      <option value="audi">Domiat</option>
+      <option value="audi">Asuit</option>
+      <option value="audi">Matroh</option>
+      <option value="audi">Suiz</option>
+
+    </select></div>
+
+
+
+
+
+    <a href="./all-doctors.html" type="submit" class="btn btn-primary">visit doctors</a>
+    </div>
+  </form>
+
+</div>
+
+<div class="col-lg-6">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.5853328187873!2d31.009959584918047!3d30.561017681697276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d723aead747d%3A0xe29cb221f3862fb5!2spear%20courses!5e0!3m2!1sar!2seg!4v1593637874983!5m2!1sar!2seg"
+width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+</div>
+</div>
+</section>
+<div class="brands py-3">
+    <div class="container-fluid">
+       <!--slider img brands by owl carousel-->
+        <div class="owl-carousel owl-theme brand">
+            <div class="item"><img src="img/Brands/brand1.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand2.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand3.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand4.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand5.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand6.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand7.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand8.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand9.png" alt="c"></div>
+        </div>
+    </div>
+</div>
+
+
+<section class="footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-3 col-6 first-part">
+  <img src="./img/logo.png" alt="logo" >
+<p>Consulting WP - Before we talk destination,
+   we shine a spotlight across your organization
+   to fully understand its people, processes, and technology.</p>
+</div>
+<div class="col-lg-3 col-6">
+<h3>Pages</h3>
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Doctors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Blog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">contactUs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Shop</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">timetable</a>
+  </li>
+</ul>
+</div>
+<div class="col-lg-3 col-6 third-part">
+<h3>RECENT NEWS</h3>
+<div class="col-12 third-part-first">
+<a href="#">Eye lens regeneration from own stem cells</a>
+
+<p><i class="fas fa-clock clc"></i>September 30, 2016</p></div>
+
+<a href="#">Sense of smell may predict Alzheimer’s risk</a>
+<p><i class="fas fa-clock clc"></i>September 30, 2016</p>
+</div>
+<div class="col-lg-3 col-6 forth-part">
+<h3>NEWSLETTER</h3>
+<p>Recieve our latest news straight to your inbox</p>
+  <input type="text" id="name" class="form-control" autocomplete="off" placeholder="Enter Email Address">
+<button  class="btn btn-primary ">SUBSCRIBE</button>
+</div>
+
+<div class="last-footer">
+<p>Made with ♥ by Hogash.com © 2016 Kallyas.net All rights reserved.</p>
+<i class="fab fa-facebook-square ic"></i>
+<i class="fab fa-instagram-square ic"></i>
+<i class="fab fa-twitter-square ic"></i>
+
+</div>
+</div>
+</section>
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <script src="js/jQuery3.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+  integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+   integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+  <script src="css/bootstrap/js/bootstrap.min.js"></script>
+  <script src="webfont/fontawesome/js/all.min.js"></script>
+  <script src="js/owl/owl.carousel.min.js"></script>
+
+  </body>
+  </html>

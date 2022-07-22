@@ -1,0 +1,96 @@
+:root{
+  --main-bg:#007bff;
+}
+@font-face{font-family:'srir'; src:url(../fonts/font/Sriracha-Regular.ttf);}
+                                         /*************************** Header *********************************/
+                                                         /********** First Header *******/
+        .header  .list .nav-link{
+          color: white;
+        }
+  .header .list{
+    background-color: var(--main-bg);
+  }
+  .header  .list{
+font-family: srir;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+align-items: center;
+    box-sizing: border-box;
+  }
+  .header  .cart{
+    padding-left: 50px;
+
+  }
+.header  .cart span {
+  color:#fff ;
+  background-color: var(--main-bg);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: -8px;
+  left: 86px;
+  border: 1px solid blue;
+  font-size: 10px;
+
+}
+.header  .user .ico{
+  color: var(--main-bg);
+
+}
+
+.header .list .nav-link:hover {
+
+border-bottom:3px solid black;
+transition: 2s width;
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .header ul {
+      width: 169%;
+      flex-direction: row;
+      margin-left: 20px;
+}
+  .header ul li{
+padding-left: 20px;
+  }
+      .col-2 {
+
+          padding-top: 100px;
+          padding-left: -50px;
+}
+.col-1 {
+
+    padding-top: 93px;
+}
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .header ul {
+    width: 240%;
+    flex-direction: row;
+    margin-top: 84px;
+    margin-left: -125px;
+  }
+  .header ul li{
+  padding-left: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 599px) {
+  .header ul {
+    width: 240%;
+    flex-direction: row;
+    margin-top: 84px;
+    margin-left: -125px;
+  }
+  .header ul li{
+  padding-left: 13px;
+  }
+
+}

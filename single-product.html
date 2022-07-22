@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Single Product</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="webfont/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/he-fo.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!-- The Modal -->
+    <div class="modal mod fade" id="myModal">
+      <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+          <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+<img id="popup-img" src="" alt="img">
+
+        </div>
+      </div>
+    </div>
+
+
+  <button class="btn-scroll" id="goup"><i class="fas fa-long-arrow-alt-up"></i></button>
+  <div class="modal fade" id="myModal">
+<div class="modal-dialog ">
+<div class="modal-content">
+
+<!-- Modal Header -->
+<div class="modal-header">
+<h4 class="modal-title">SignUp & Register</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+
+<!-- Modal body -->
+<div class="modal-body">
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="pill" href="#SignUp">SignUP</a>
+
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="pill" href="#Register">Register</a>
+</li>
+
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div class="tab-pane container active " id="SignUp">
+  <div class="register">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" id="name" class="form-control" autocomplete="off">
+                        <i class="far fa-user ico"></i>
+                        <p class="m-0 text-danger d-none name"> Pleas Enter Your Name.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" id="email" class="form-control" autocomplete="off">
+                        <i class="fas fa-at ico"></i>
+                        <p class="m-0 text-danger d-none email"> Pleas Enter Your Email.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" id="pass" class="form-control" required>
+                        <i class="fas fa-unlock ico"></i>
+                        <p class="m-0 text-danger d-none pass"> Pleas Enter Your Password.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Re-Password</label>
+                        <input type="password" id="re-pass" class="form-control">
+                        <i id="ico" class="fas fa-undo ico"></i>
+                        <p class="m-0 text-danger d-none re-pass"> This Not Equal Password.</p>
+                    </div>
+                    <div class="m-or-f">
+                        <div class="custom-control custom-radio custom-control-inline male">
+                            <input type="radio" class="custom-control-input" id="maleRadio" name="radio">
+                            <label class="custom-control-label" for="maleRadio">Male</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline female">
+                            <input type="radio" class="custom-control-input" id="femaleRadio" name="radio" value="Male">
+                            <label class="custom-control-label" for="femaleRadio">Female</label>
+                        </div>
+                        <button type="button"  onclick="lest()" id="signup" class="btn btn-primary mt-4 d-block rounded-0">Sign Up</button>
+
+                    </div>
+                </div>
+</div>
+<div class="tab-pane container fade" id="Register">
+  <div class="login">
+                    <div class="form-group">
+                      <label class="p-0">Email address</label>
+                      <input type="email" class="form-control" id="lo-email" autocomplete="off">
+                      <i class="fas fa-at ico"></i>
+                      <p class="m-0 text-danger d-none lo-email"> Pleas Enter Your Email.</p>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="p-0">Password</label>
+                      <input type="password" class="form-control" id="lo-pass">
+                      <i class="fas fa-unlock-alt ico"></i>
+                      <p class="m-0 text-danger d-none lo-pass"> Pleas Enter Your password.</p>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="remember" style="
+                      padding: 10px 25px">
+                      <label class="custom-control-label" for="remember">Remember Me</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-4 rounded-0">Login</button>
+                    </div>
+</div>
+
+</div>
+</div>
+
+<!-- Modal footer -->
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+
+</div>
+</div>
+</div>
+<section class="header">
+  <div class="container">
+<div class="row">
+  <div class="col-lg-12">
+  <nav class="navbar navbar-expand-lg ">
+
+    <!-- Brand/logo -->
+    <div class="col-3 ">
+    <a class="navbar-brand bg-white" href="#">
+      <img src="./img/logo.png" alt="logo" >
+    </a>
+</div>
+    <!-- Links -->
+
+      <div class="col-6  ">
+    <ul class="navbar-nav  list ">
+      <li class="nav-item">
+        <a class="nav-link" href="./home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./doctors.html">Doctors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./contact.html">contactUs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./shop.html">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./AskUs.html">AskUs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-2 ">
+                   <div class="cart" id="cart">
+                  <a href="./cart.html " > <i class="fas fa-shopping-cart ico" title="add to card"></i></a>
+                       <span class="badge badge-danger">1</span>
+                   </div>
+                  </div>
+
+                  <div class="col-1 ">
+                   <div class="user" id="user">
+                    <a href="" data-toggle="modal" data-target="#myModal">   <i class="far fa-user ico " title="make signUp" ></i></a>
+                   </div>
+                  </div>
+
+
+</nav></div>
+</div>
+</div>
+</section>
+<section class="single-product">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-6">
+  <div claas="pic">
+<img  class="img-mod" src="./img/prod05.jpg" alt="  ">
+</div>
+</div>
+<div class="col-lg-6 part2">
+  <div class="product-details">
+      <div class="prod-name">
+          <h5>DiamondClean Rechargeable Electric Toothbrush</h5>
+      </div>
+      <div class="prod-rate">
+
+          <i class="far fa-star y"></i>
+          <i class="far fa-star y"></i>
+          <i class="far fa-star y"></i>
+          <i class="far fa-star y"></i>
+          <i class="far fa-star y"></i>
+
+       </div>
+      <div class="prod-price">
+          <p>$112.00</p>
+      </div>
+      <hr>
+      <div class="prod-description">
+          <h6>DESCRIPTION</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum non orci in rhoncus.
+             Suspendisse congue sit amet lorem ut finibus.
+            Sed placerat mi vel neque placerat interdum. Ut laoreet turpis ut pretium eleifend.
+          </p>
+      </div>
+      <hr>
+      <div class="prod-information">
+          <h6>Category</h6>
+
+          <p>Baby, Kids & Toys, Beauty, Contact Lenses, Diet & Fitness, Grocery, Home Health Care Solutions,
+            Household, Medicines & Treatments, Natural & Organic, Personal Care, Seasonal, Sexual Wellness,
+             Vitamins & Supplements</p>
+      </div>
+      <hr>
+      <div class="prod-action text-center py-3">
+          <div class="row">
+            <div class="col-5">
+                <div class="quant">
+                    <input id="jq-quant" class="jq-quant form-control h-auto px-2 p-0 shadow-none" type="text" value="1">
+                    <div class="qunt-action">
+                        <span id="plus">+</span>
+                        <span id="sub">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 ">
+                <a class='buy' href="">Buy Now</a>
+            </div>
+            <div class="col-2">
+                <a href="">
+                      <a href="./cart.html " > <i class="fas fa-shopping-cart ico"></i></a>
+                </a>
+            </div>
+
+
+
+
+
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</section>
+<div class="brands py-3">
+    <div class="container-fluid">
+       <!--slider img brands by owl carousel-->
+        <div class="owl-carousel owl-theme brand">
+            <div class="item"><img src="img/Brands/brand1.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand2.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand3.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand4.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand5.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand6.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand7.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand8.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand9.png" alt="c"></div>
+        </div>
+    </div>
+</div>
+
+
+<section class="footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-3 col-6 first-part">
+  <img src="./img/logo.png" alt="logo" >
+<p>Consulting WP - Before we talk destination,
+   we shine a spotlight across your organization
+   to fully understand its people, processes, and technology.</p>
+</div>
+<div class="col-lg-3 col-6">
+<h3>Pages</h3>
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Doctors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Blog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">contactUs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Shop</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">timetable</a>
+  </li>
+</ul>
+</div>
+<div class="col-lg-3 col-6 third-part">
+<h3>RECENT NEWS</h3>
+<div class="col-12 third-part-first">
+<a href="#">Eye lens regeneration from own stem cells</a>
+
+<p><i class="fas fa-clock clc"></i>September 30, 2016</p></div>
+
+<a href="#">Sense of smell may predict Alzheimer’s risk</a>
+<p><i class="fas fa-clock clc"></i>September 30, 2016</p>
+</div>
+<div class="col-lg-3 col-6 forth-part">
+<h3>NEWSLETTER</h3>
+<p>Recieve our latest news straight to your inbox</p>
+  <input type="text" id="name" class="form-control" autocomplete="off" placeholder="Enter Email Address">
+<button  class="btn btn-primary ">SUBSCRIBE</button>
+</div>
+
+<div class="last-footer">
+<p>Made with ♥ by Hogash.com © 2016 Kallyas.net All rights reserved.</p>
+<i class="fab fa-facebook-square ic"></i>
+<i class="fab fa-instagram-square ic"></i>
+<i class="fab fa-twitter-square ic"></i>
+
+</div>
+</div>
+</section>
+<!-- <div class="image-box">
+<iframe width="100%" height="600px" frameborder="0"
+src="https://momento360.com/e/u/29ea6100f5304d4e95fb2abc547fb22d?utm_campaign=embed&utm_source=other&heading=-13.202396007348284&pitch=68.23170242467492&field-of-view=100"></iframe>
+</div> -->
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <script src="js/jQuery3.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+  integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+   integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+  <script src="css/bootstrap/js/bootstrap.min.js"></script>
+  <script src="webfont/fontawesome/js/all.min.js"></script>
+  <script src="js/owl/owl.carousel.min.js"></script>
+
+  </body>
+  </html>

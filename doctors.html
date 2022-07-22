@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Doctors</title>
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="webfont/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/he-fo.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <button class="btn-scroll" id="goup"><i class="fas fa-long-arrow-alt-up"></i></button>
+  <div class="modal fade" id="myModal">
+<div class="modal-dialog ">
+<div class="modal-content">
+
+<!-- Modal Header -->
+<div class="modal-header">
+<h4 class="modal-title">SignUp & Register</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+
+<!-- Modal body -->
+<div class="modal-body">
+<ul class="nav nav-tabs">
+<li class="nav-item">
+<a class="nav-link active" data-toggle="pill" href="#SignUp">SignUP</a>
+
+</li>
+<li class="nav-item">
+<a class="nav-link" data-toggle="pill" href="#Register">Register</a>
+</li>
+
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div class="tab-pane container active " id="SignUp">
+  <div class="register">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input type="text" id="name" class="form-control" autocomplete="off">
+                        <i class="far fa-user ico"></i>
+                        <p class="m-0 text-danger d-none name"> Pleas Enter Your Name.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" id="email" class="form-control" autocomplete="off">
+                        <i class="fas fa-at ico"></i>
+                        <p class="m-0 text-danger d-none email"> Pleas Enter Your Email.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" id="pass" class="form-control" required>
+                        <i class="fas fa-unlock ico"></i>
+                        <p class="m-0 text-danger d-none pass"> Pleas Enter Your Password.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Re-Password</label>
+                        <input type="password" id="re-pass" class="form-control">
+                        <i id="ico" class="fas fa-undo ico"></i>
+                        <p class="m-0 text-danger d-none re-pass"> This Not Equal Password.</p>
+                    </div>
+                    <div class="m-or-f">
+                        <div class="custom-control custom-radio custom-control-inline male">
+                            <input type="radio" class="custom-control-input" id="maleRadio" name="radio">
+                            <label class="custom-control-label" for="maleRadio">Male</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline female">
+                            <input type="radio" class="custom-control-input" id="femaleRadio" name="radio" value="Male">
+                            <label class="custom-control-label" for="femaleRadio">Female</label>
+                        </div>
+                        <button type="button"  onclick="lest()" id="signup" class="btn btn-primary mt-4 d-block rounded-0">Sign Up</button>
+
+                    </div>
+                </div>
+</div>
+<div class="tab-pane container fade" id="Register">
+  <div class="login">
+                    <div class="form-group">
+                      <label class="p-0">Email address</label>
+                      <input type="email" class="form-control" id="lo-email" autocomplete="off">
+                      <i class="fas fa-at ico"></i>
+                      <p class="m-0 text-danger d-none lo-email"> Pleas Enter Your Email.</p>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="p-0">Password</label>
+                      <input type="password" class="form-control" id="lo-pass">
+                      <i class="fas fa-unlock-alt ico"></i>
+                      <p class="m-0 text-danger d-none lo-pass"> Pleas Enter Your password.</p>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="remember" style="
+                      padding: 10px 25px">
+                      <label class="custom-control-label" for="remember">Remember Me</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-4 rounded-0">Login</button>
+                    </div>
+</div>
+
+</div>
+</div>
+
+<!-- Modal footer -->
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+</div>
+
+</div>
+</div>
+</div>
+<section class="header">
+  <div class="container">
+<div class="row">
+  <div class="col-lg-12">
+  <nav class="navbar navbar-expand-lg ">
+
+    <!-- Brand/logo -->
+    <div class="col-3 ">
+    <a class="navbar-brand bg-white" href="#">
+      <img src="./img/logo.png" alt="logo" >
+    </a>
+</div>
+    <!-- Links -->
+
+      <div class="col-6  ">
+    <ul class="navbar-nav  list ">
+      <li class="nav-item">
+        <a class="nav-link" href="./home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./doctors.html">Doctors</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./contact.html">contactUs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./shop.html">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./AskUs.html">AskUs</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col-2 ">
+                   <div class="cart" id="cart">
+                  <a href="./cart.html " > <i class="fas fa-shopping-cart ico" title="add to card"></i></a>
+                       <span class="badge badge-danger">1</span>
+                   </div>
+                  </div>
+
+                  <div class="col-1 ">
+                   <div class="user" id="user">
+                    <a href="" data-toggle="modal" data-target="#myModal">   <i class="far fa-user ico " title="make signUp" ></i></a>
+                   </div>
+                  </div>
+
+
+</nav></div>
+</div>
+</div>
+</section>
+<section class="panner">
+<div class="img">
+<img src="./img/dentistry.jpg" alt="pic">
+
+<div class="panner-content">
+  <h1>Physicians</h1>
+  <p>Meet our clinic staff</p>
+
+</div>
+</div>
+</section>
+<section class="chef">
+<div class="container-fluid">
+<div class="row">
+  <div class="col-lg-6 col-12">
+    <h2>JOHN WAITS, MD</h2>
+    <h4>Chief Executive Officer & Faculty Physician</h4>
+    <p>Dr. Waits is a practicing, board-certified Family Medicine /
+      Obstetrician who serves as CEO of Cahaba Medical Care and the Program Director
+       and DIO of the Cahaba Family Medicine Residency.  He is an associate professor in
+       the Department of Family Medicine and in the Department of Obstetrics and Gynecology at
+        the College of Community Health Sciences at the University of Alabama School of Medicine in Tuscaloosa.
+         He served as Program Director of the Tuscaloosa Family Medicine Residency in Tuscaloosa, Alabama for five years,
+          and during this</p>
+
+<div class="row">
+<div class="col-3">
+<h5>Experice</h5><span>+19 years</span></div>
+<div class="col-3"><h5>TYPE OF</h5><span>Surgan</span></div>
+<div class="col-3"><h5>HOURLY RATE</h5><span>$100,00</span></div>
+<div class="col-3"><h5>HOURS WORKED</h5><span>8</span></div>
+</div>
+
+  </div>
+  <div class="col-lg-6 col-12">
+
+<img src="./img/profile01.jpg" alt="pic">
+  </div>
+</div>
+</div>
+</section>
+
+
+<section class="doctors">
+      <div class="title">
+<h3>CLINIC STAFF</h3>
+      </div>
+      <div class="container-fluid">
+<div class="owl-carousel owl-theme doc">
+    <div class="item">
+<img src="./img/profile01.jpg" alt="pic">
+<h5>Lacy Smith, MD</h5>
+<h6>Chief Medical Officer & Faculty Physician</h6>
+<p>Dr. Smith joined Cahaba Medical Care in
+   2010 and worked with Dr. Waits to transition CMC into
+    a FQHC as well as assisted in co-founding</p>
+
+    </div>
+    <div class="item">
+      <img src="./img/profile05.jpg" alt="pic">
+      <h5>Lacy Smith, MD</h5>
+      <h6>Chief Medical Officer & Faculty Physician</h6>
+      <p>Dr. Smith joined Cahaba Medical Care in
+         2010 and worked with Dr. Waits to transition CMC into
+          a FQHC as well as assisted in co-founding</p>
+
+    </div>
+    <div class="item">
+      <img src="./img/profile02.jpg" alt="pic">
+      <h5>Lacy Smith, MD</h5>
+      <h6>Chief Medical Officer & Faculty Physician</h6>
+      <p>Dr. Smith joined Cahaba Medical Care in
+         2010 and worked with Dr. Waits to transition CMC into
+          a FQHC as well as assisted in co-founding</p>
+    </div>
+    <div class="item">
+      <img src="./img/profile03.jpg" alt="pic">
+      <h5>Lacy Smith, MD</h5>
+      <h6>Chief Medical Officer & Faculty Physician</h6>
+      <p>Dr. Smith joined Cahaba Medical Care in
+         2010 and worked with Dr. Waits to transition CMC into
+          a FQHC as well as assisted in co-founding</p>
+    </div>
+    <div class="item">
+      <img src="./img/profile04.jpg" alt="pic">
+      <h5>Lacy Smith, MD</h5>
+      <h6>Chief Medical Officer & Faculty Physician</h6>
+      <p>Dr. Smith joined Cahaba Medical Care in
+         2010 and worked with Dr. Waits to transition CMC into
+          a FQHC as well as assisted in co-founding</p>
+    </div>
+    <div class="item">
+      <img src="./img/profile05.jpg" alt="pic">
+      <h5>Lacy Smith, MD</h5>
+      <h6>Chief Medical Officer & Faculty Physician</h6>
+      <p>Dr. Smith joined Cahaba Medical Care in
+         2010 and worked with Dr. Waits to transition CMC into
+          a FQHC as well as assisted in co-founding</p>
+    </div>
+
+</div>
+</div>
+</section>
+
+<section class="nurses">
+<div class="container-fluid">
+<div class="row">
+  <div class="col-12 title"><h3>NURSE PRACTITIONER</h3></div>
+<div class="col-lg-3 col-md-6 col-12">
+  <img src="./img/profile06.jpg" alt="pic">
+  <h5>Brian Wingate, CRNP</h5>
+  <h6>Nurse Anesthetist</h6>
+  <p>Mr. Wingate joined Cahaba Medical Care in April 2016.
+     He holds degrees from Florida State University (BA),
+     Chipola College (ASN), Jackson</p>
+</div>
+<div class="col-lg-3 col-md-6 col-12">
+  <img src="./img/profile07.jpg" alt="pic">
+  <h5>Reatha Ballard, CRNA</h5>
+  <h6>Nurse Practitioner </h6>
+  <p>Mrs. Ballard stated, "First, let me say that I am so
+    happy and blessed to be here at CMC.
+      Everyone has been so kind and welcoming."  Mrs.</p>
+</div>
+<div class="col-lg-3 col-md-6 col-12">
+  <img src="./img/profile08.jpg" alt="pic">
+  <h5>Lacy Smith, MD</h5>
+  <h6>Nurse Anesthetist </h6>
+  <p>Dr. Smith joined Cahaba Medical Care in 2010
+     and worked with Dr. Waits to transition CMC into a
+      FQHC as well as assisted in co-founding</p>
+</div>
+<div class="col-lg-3 col-md-6 col-12">
+  <img src="./img/profile05.jpg" alt="pic">
+  <h5>Suzanne Tompkins, PA-C
+</h5>
+  <h6>Physician Assistant
+ </h6>
+  <p>Dr. Waits joined Cahaba Medical Care in 2013 after
+    graduating from Tuscaloosa Family Medicine Residency
+     and completing
+
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="counter">
+ <div class="cavans">
+<img src="./img/pattern2_lq-1.png" alt=" ">
+</div>
+<div class="rl-counter">
+  <div class="container-fluid">
+<div class="row">
+<div class="col-3">
+
+  <img src="./img/icn1.png" alt=" ">
+  <h3>Patients served</h3>
+<span class="count">100</span>
+</div>
+
+<div class="col-3">
+<img src="./img/icn2.png" alt=" ">
+<h3>Treatments</h3>
+<span class="count">300</span>
+</div>
+<div class="col-3">
+<img src="./img/icn3.png" alt=" ">
+<h3>Clinics</h3>
+<span class="count">1000</span>
+</div>
+<div class="col-3">
+<img src="./img/icn4.png" alt=" ">
+<h3>Employees</h3>
+<span class="count">500</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="brands py-3">
+    <div class="container-fluid">
+       <!--slider img brands by owl carousel-->
+        <div class="owl-carousel owl-theme brand">
+            <div class="item"><img src="img/Brands/brand1.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand2.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand3.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand4.png" alt="s"></div>
+            <div class="item"><img src="img/Brands/brand5.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand6.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand7.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand8.png" alt="c"></div>
+            <div class="item"><img src="img/Brands/brand9.png" alt="c"></div>
+        </div>
+    </div>
+</div>
+
+
+<section class="footer">
+<div class="container-fluid">
+<div class="row">
+<div class="col-lg-3 col-6 first-part">
+  <img src="./img/logo.png" alt="logo" >
+<p>Consulting WP - Before we talk destination,
+   we shine a spotlight across your organization
+   to fully understand its people, processes, and technology.</p>
+</div>
+<div class="col-lg-3 col-6">
+<h3>Pages</h3>
+<ul class="navbar-nav">
+  <li class="nav-item">
+    <a class="nav-link" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Doctors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Blog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">contactUs</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Shop</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">timetable</a>
+  </li>
+</ul>
+</div>
+<div class="col-lg-3 col-6 third-part">
+<h3>RECENT NEWS</h3>
+<div class="col-12 third-part-first">
+<a href="#">Eye lens regeneration from own stem cells</a>
+
+<p><i class="fas fa-clock clc"></i>September 30, 2016</p></div>
+
+<a href="#">Sense of smell may predict Alzheimer’s risk</a>
+<p><i class="fas fa-clock clc"></i>September 30, 2016</p>
+</div>
+<div class="col-lg-3 col-6 forth-part">
+<h3>NEWSLETTER</h3>
+<p>Recieve our latest news straight to your inbox</p>
+  <input type="text" id="name" class="form-control" autocomplete="off" placeholder="Enter Email Address">
+<button  class="btn btn-primary ">SUBSCRIBE</button>
+</div>
+
+<div class="last-footer">
+<p>Made with ♥ by Hogash.com © 2016 Kallyas.net All rights reserved.</p>
+<i class="fab fa-facebook-square ic"></i>
+<i class="fab fa-instagram-square ic"></i>
+<i class="fab fa-twitter-square ic"></i>
+
+</div>
+</div>
+</section>
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+
+  <script src="js/jQuery3.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+  integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+   integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+  <script src="css/bootstrap/js/bootstrap.min.js"></script>
+  <script src="webfont/fontawesome/js/all.min.js"></script>
+  <script src="js/owl/owl.carousel.min.js"></script>
+
+  </body>
+  </html>
